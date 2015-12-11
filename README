@@ -1,0 +1,9 @@
+This program creates a virtual tap in a TCP stream, copying
+both input and output into a log file. A second log file
+is created with a hex dump of the data.
+
+This program is based upon the following article:
+https://pragprog.com/magazines/2012-06/the-beauty-of-concurrency-in-go
+
+go run gotcpspy.go -host pop.yandex.ru -port 110 -local_port 8080
+go run gotcpspy.go -host <dest> -port <dest port> -local <local port>
